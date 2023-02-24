@@ -1,0 +1,417 @@
+/*este es el fromato iniciar*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background: #fff;
+}
+/*esta es el texto del inicio*/
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+    color: #121213d2;
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 0.683);
+}
+/*este es la el gradiente y la imagen de fondo*/
+header {
+    width: 100%;
+    height: 600px;
+    background: #1fa2ff;
+    background: -webkit-linear-gradient(to right, hsla(205, 100%, 56%, 0.416), hsla(189, 96%, 53%, 0.47), #a6ffcb),
+        url(../img/fondo.jpg);
+    background: linear-gradient(to right, hsla(205, 100%, 56%, 0.416), hsla(189, 96%, 53%, 0.47), #a6ffcb), url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+/*lista contactanos whassp */
+.menu_list {
+    margin-right: 10px;
+    text-align: center;
+    padding: 30px, 50px, 0 0;
+}
+
+.lista_item {
+    display: inline-block;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.link:after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #141472;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+}
+
+.link:hover:after {
+    width: 100%;
+    right: 0;
+}
+
+.menu_list {
+    text-align: right;
+    padding: 100px, 0, 0, 0;
+}
+/*fin*/
+
+/*esta es la pimera parte que ofrecemos*/
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #030e86;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 510px;
+    border-radius: 5%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #070387;
+    color: #ffff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+
+}
+/*fin*/
+/*que dicen nuestros clientes*/
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 48%;
+    height: 220px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 70%;
+    color: #fff;
+}
+
+.cards .card > .contenido-textos-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+/*final del codigo*/
+
+/*catalogo de productos*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+
+.subtitle {
+    color: #000000d2;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+
+
+/*galeria de imagenes*/
+.projects {
+    background: #f2f2f2;
+}
+
+.interior {
+    text-decoration: none;
+
+}
+
+.projects__grid {
+    display: grid;
+    height: 550px;
+    grid-template-areas:
+        "img1 img1 img2 img3"
+        "img1 img1 img4 img5";
+    gap: 10px;
+}
+
+.projects__item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.projects__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.projects__item:nth-of-type(1) {
+    grid-area: img1;
+}
+
+.projects__item:nth-of-type(2) {
+    grid-area: img2;
+}
+
+.projects__item:nth-of-type(3) {
+    grid-area: img3;
+}
+
+.projects__item:nth-of-type(4) {
+    grid-area: img4;
+}
+
+.projects__item:nth-of-type(5) {
+    grid-area: img5;
+}
+
+.projects__hover {
+    position: absolute;
+    background: #dc143c8c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.projects__item:hover .projects__hover {
+    transform: translateX(0%);
+}
+
+.projects__icon {
+    margin-top: 10px;
+    font-size: 30px;
+
+}
+
+/*fin*/
+
+/*esta es la barra del final numero correro, etc*/
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.contenedor-foo p {
+    color: #ccc;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9e9e;
+}
+/*fin*/
+
+
+
+ /*adaptacion para los dispisitivos moviles*/
+ @media screen and (max-width:900px) {
+     header {
+         background-position: center;
+     }
+
+     .contenedor-sobre-nosotros {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+     }
+
+     .sobre-nosotros .contenido-textos {
+         width: 90%;
+     }
+
+     .imagen-about-us {
+         width: 90%;
+     }
+
+     /*opiniones de los clientess*/
+     .cards {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .cards .card {
+         width: 90%;
+     }
+
+     .cards .card:first-child {
+         margin-bottom: 30px;
+     }
+
+     /*servicios */
+     .servicio-cont {
+         justify-content: center;
+         flex-direction: column;
+     }
+
+     .servicio-ind {
+         width: 100%;
+         text-align: center;
+     }
+
+     .servicio-ind:nth-child(1),
+     .servicio-ind:nth-child(2) {
+         margin-bottom: 50px;
+     }
+
+     .servicio-ind img {
+         width: 90%;
+     }
+
+ }
+ @media screen and (max-width:800px) {
+     .projects__grid {
+         grid-template-areas:
+             "img1 img1 img2 img2"
+             "img1 img1 img3 img3"
+             "img4 img4 img5 img5";
+     }
+     
+     .contenedor-footer{
+        flex-direction: column;
+        margin: 0px 0px 20px 20px;
+     }
+ }
+
+ @media screen and (max-width:300px) {
+    .projects__grid{
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5";
+        height: auto;
+    }
+    .cards .card{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+
+    }
+ }
